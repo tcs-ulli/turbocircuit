@@ -178,7 +178,7 @@ begin
   begin
     DragDropStarted := True;
 
-    NewWire := TvWire.Create;
+    NewWire := TvWire.Create(vDocument.GetPage(0));
     NewWire.X := FPVDocPos.X;
     NewWire.Y := FPVDocPos.Y;
   end;
@@ -437,4 +437,4 @@ finalization
 vToolsDelegate.Free;
 
 end.
-
+

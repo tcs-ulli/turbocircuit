@@ -23,8 +23,9 @@ type
 //    procedure Assign(ASource: TPath);
     function TryToSelect(APos: TPoint; var ASubpart: Cardinal): TvFindEntityResult; override;
     procedure MoveSubpart(ADeltaX, ADeltaY: Double; ASubpart: Cardinal); override;
-    procedure Render(ADest: TFPCustomCanvas; ARenderInfo: TvRenderInfo; ADestX: Integer = 0;
-      ADestY: Integer = 0; AMulX: Double = 1.0; AMulY: Double = 1.0); override;
+    procedure Render(ADest: TFPCustomCanvas; var ARenderInfo: TvRenderInfo;
+  ADestX: Integer=0; ADestY: Integer=0; AMulX: Double=1.0; AMulY: Double=1.0);
+  override;
   end;
 
 implementation
@@ -51,8 +52,8 @@ begin
   end;
 end;
 
-procedure TvWire.Render(ADest: TFPCustomCanvas; ARenderInfo: TvRenderInfo; ADestX: Integer = 0;
-  ADestY: Integer = 0; AMulX: Double = 1.0; AMulY: Double = 1.0);
+procedure TvWire.Render(ADest: TFPCustomCanvas; var ARenderInfo: TvRenderInfo;
+  ADestX: Integer; ADestY: Integer; AMulX: Double; AMulY: Double);
 
   function CoordToCanvasX(ACoord: Double): Integer;
   begin

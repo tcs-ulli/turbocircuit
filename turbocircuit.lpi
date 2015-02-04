@@ -42,7 +42,6 @@
       <Unit0>
         <Filename Value="turbocircuit.dpr"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="turbocircuit"/>
       </Unit0>
       <Unit1>
         <Filename Value="app.pas"/>
@@ -55,22 +54,18 @@
       <Unit2>
         <Filename Value="schematics.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="schematics"/>
       </Unit2>
       <Unit3>
         <Filename Value="dbcomponents.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="dbcomponents"/>
       </Unit3>
       <Unit4>
         <Filename Value="translationstc.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="translationstc"/>
       </Unit4>
       <Unit5>
         <Filename Value="constants.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="constants"/>
       </Unit5>
       <Unit6>
         <Filename Value="document.pas"/>
@@ -81,51 +76,42 @@
         <Filename Value="dlgabout.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="vAbout"/>
-        <UnitName Value="dlgabout"/>
       </Unit7>
       <Unit8>
         <Filename Value="dlgcomponentseditor.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="vComponentsEditor"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="dlgcomponentseditor"/>
       </Unit8>
       <Unit9>
         <Filename Value="tcutils.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="tcutils"/>
       </Unit9>
       <Unit10>
         <Filename Value="tcdbutils.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="tcdbutils"/>
       </Unit10>
       <Unit11>
         <Filename Value="tcfileformat.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="tcfileformat"/>
       </Unit11>
       <Unit12>
         <Filename Value="drawer.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="drawer"/>
       </Unit12>
       <Unit13>
         <Filename Value="dlgdocumentopts.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="DocumentOptions"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="dlgdocumentopts"/>
       </Unit13>
       <Unit14>
         <Filename Value="tclists.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="tclists"/>
       </Unit14>
       <Unit15>
         <Filename Value="tcsettings.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="tcsettings"/>
       </Unit15>
       <Unit16>
         <Filename Value="toolscode.pas"/>
@@ -151,11 +137,5 @@
         <LinkerOptions Value="-framework Qt4Intf -lobjc -lsqlite3"/>
       </Options>
     </Linking>
-    <Other>
-      <CompilerMessages>
-        <UseMsgFile Value="True"/>
-      </CompilerMessages>
-      <CompilerPath Value="$(CompPath)"/>
-    </Other>
   </CompilerOptions>
 </CONFIG>
