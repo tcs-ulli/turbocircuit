@@ -129,6 +129,7 @@ procedure TItemsDrawer.DrawComponentSelection(ACanvas: TCanvas;
 var
   TargetRect: TRect;
 begin
+  if not Assigned(AComponent) then exit;
   Orientation := AComponent^.Orientation;
 
   vComponentsDatabase.GoToRecByID(AComponent^.TypeID);

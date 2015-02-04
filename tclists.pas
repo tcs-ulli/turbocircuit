@@ -8,7 +8,7 @@ interface
 
 uses
   Classes, SysUtils, Graphics,
-  constants, dbcomponents, tcutils;
+  constants, dbcomponents, tcutils,LCLProc;
 
 type
 
@@ -322,12 +322,12 @@ begin
 
   while (NextComponent <> nil) do
   begin
-    WriteLn('#Component #' + IntToStr(i) + ' TypeID: ' + NextComponent^.TypeID);
+    DebugLn('#Component #' + IntToStr(i) + ' TypeID: ' + NextComponent^.TypeID);
 
     NextComponent := PTCComponent(NextComponent^.Next);
     Inc(i)
   end;
-  WriteLn('');
+  DebugLn('');
 end;
 
 { TCWireList }
